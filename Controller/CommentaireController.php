@@ -42,7 +42,7 @@ class CommentaireController {
         return $stmt->execute([$auteur, $contenu, $note, $date_commentaire, $id_commentaire]);
     }
 
-    // Delete
+    // Deleteldgjgkjndfjsk
     public function deleteCommentaire($id_commentaire) {
         $stmt = $this->pdo->prepare("DELETE FROM commentaire WHERE id_commentaire = ?");
         return $stmt->execute([$id_commentaire]);
